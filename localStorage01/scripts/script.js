@@ -1,17 +1,20 @@
-//Name Storage
+//1)Name Storage
 //Array Function
 const name = () => {
 
-    //Target the element that I want to modify in HTML
+    //Target the element that I want to modify in HTML by its ID
     let sayHello = document.getElementById('sayHello');
-    //Define a variable 'nameStorage' and retrieve the value 
-    //(we will get the "value" input)
+
+    //Attribuate to nameStorage variable the key 'nom'
+    //We will get the information and store it
     let nameStorage = localStorage.getItem('nom');
 
 
     //Conditions
+    //If the variable doesn't have input, then it will display 'Hello stranger....'
     if (nameStorage == null) {
         sayHello.innerHTML = 'Hello stranger, can you enter your pseudo ?';
+        //If the user communicate his pseudo, we can display 'Bonjour + his pseudo'
     } else {
         //We will retrieve the gotten value for nameStorage and display it.
         sayHello.innerHTML = `Bonjour ${nameStorage}`;
@@ -19,24 +22,23 @@ const name = () => {
 
 };
 
-//Name Storage
+//With that function, we will set to the variable nameStorage the value (pseudo)
+//From now, we are able to display it on the website (in 'Bonjour + pseudo')
 function setData() {
     let pseudo = document.getElementById('pseudo').value;
     localStorage.setItem('nom', pseudo);
 };
 
 
-//Counter Storage
+//2)Counter Storage---------------------------------------------------------------------------
+//It's quite the same, we process the same way
 const visit = () => {
     let visitDisplay = document.getElementById('visitDisplay');
     let visitCount = localStorage.getItem('counter');
 
-    //Implement the variable visitCount +1 (every new refresh)
+    //but we have to implement the variable visitCount +1 (every new refresh)
     visitCount++;
 
-    //Now we need to setting up the elements
-    //We will say that "counter" will take the value of "visitCount"
-    //(We will set the "value")
     localStorage.setItem('counter', visitCount);
     visitDisplay.innerHTML = `Nombre de visites : ${visitCount}`;
 };

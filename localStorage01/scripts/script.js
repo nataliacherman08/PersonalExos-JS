@@ -26,6 +26,7 @@ const name = () => {
 //From now, we are able to display it on the website (in 'Bonjour + pseudo')
 function setData() {
     let pseudo = document.getElementById('pseudo').value;
+    //We attribuate the pseudo.value to the key 'nom' which is attribuated to nameStorage
     localStorage.setItem('nom', pseudo);
 };
 

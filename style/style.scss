@@ -1,0 +1,40 @@
+@font-face
+{
+    src:url('../font/Roboto-Black.ttf') format('truetype'),
+        url('../font/Roboto-BlackItalic.ttf') format('truetype'),
+        url('../font/Roboto-Bold.ttf') format('truetype'),
+        url('../font/Roboto-BoldItalic.ttf') format('truetype'),
+        url('../font/Roboto-Italic.ttf') format('truetype'),
+        url('../font/Roboto-Light.ttf') format('truetype'),
+        url('../font/Roboto-LightItalic.ttf') format('truetype'),
+        url('../font/Roboto-Medium.ttf') format('truetype'),
+        url('../font/Roboto-MediumItalic.ttf') format('truetype'),
+        url('../font/Roboto-Regular.ttf') format('truetype'),
+        url('../font/Roboto-Thin.ttf') format('truetype'),
+        url('../font/Roboto-ThinItalic.ttf') format('truetype');
+    font: {
+        family: 'Roboto';
+        size: normal;
+        weight: normal;
+    }
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font: {
+        family: 'Roboto';
+    }
+    background: {
+        color: #f7f7f7;
+    }
+}
+
+#container
+{
+    width: 350px;
+    margin: auto;
+    margin-top: 300px;
+}

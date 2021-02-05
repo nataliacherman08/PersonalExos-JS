@@ -17,3 +17,6 @@ window.addEventListener('load', () => {
 
     TL.play();
 })
+
+//If you use 'top, right, left, etc.' in your stagger and from, you have to use positions in CSS!
+//Same with 'overflow: hidden'-> for the right and left ! (it's for avoid the scrollbar)
